@@ -192,7 +192,6 @@ address {
   outline: 2px solid var(--color-primary-brand);
   outline-offset: 4px;
   border-radius: 2px;
-  padding: 24px 0;
 }
 
 .contacts-list {
@@ -270,13 +269,13 @@ address {
   align-items: center;
 }
 
-.header-nav ul.header-nav-list {
+.header-nav-list {
   flex-grow: 1;
   display: flex;
   gap: 40px;
 }
 
-.header-container address ul {
+.contacts-list {
   display: flex;
   flex-direction: row;
   column-gap: 40px;
