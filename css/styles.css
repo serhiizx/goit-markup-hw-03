@@ -252,8 +252,8 @@ address {
 }
 
 .header-container {
-  padding: 24px 0;
   display: flex;
+  padding: 0 15px;
 }
 
 .header-container ul {
@@ -468,9 +468,6 @@ address {
   background-color: var(--color-dark);
   color: var(--color-light);
   padding: 100px 0;
-}
-
-footer .container {
 }
 
 .footer-brand {
