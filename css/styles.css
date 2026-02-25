@@ -476,6 +476,7 @@ address {
 
 .footer-logo-link {
   margin-bottom: 16px;
+  margin-right: 0;
   display: inline-block;
 }
 
