@@ -1,0 +1,465 @@
+:root {
+  --font-sans: "", sans-serif;
+
+  /* Colors */
+  --color-primary-brand: #4d5ae5;
+  --color-pressed: #404bbf;
+  --color-dark: #2e2f42;
+  --color-success: #31d0aa;
+  --color-text: #434455;
+  --color-subtle-text: #8e8f99;
+  --color-accent: #e7e9fc;
+  --color-light: #f4f4fd;
+  --color-modal-overlay: #2e2f42;
+  --color-hero-background: #2e2f42;
+  --color-white-background: #ffffff;
+  --color-modal-background: #fcfcfc;
+
+  --color-background: #ffffff;
+  --color-foreground: #434455;
+}
+
+/* #region Fonts */
+.roboto-sans {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.raleway-sans {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* #endregion Fonts */
+
+/* #region Utilities */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.text-sm {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+.text-md {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+/* #endregion Utilities */
+
+/* #region Base */
+body {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 56px;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+address {
+  font-style: normal;
+}
+/* #endregion Base */
+
+/* #region Components */
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 120px 156px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0 0 72px 0;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-primary-brand);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+}
+
+.logo:focus-visible {
+  outline: 2px solid var(--color-primary-brand);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.logo span {
+  color: var(--color-dark);
+  line-height: 1.17;
+}
+
+.logo--light span {
+  color: var(--color-light);
+}
+
+.logo-accent {
+  color: var(--color-dark);
+  line-height: 1.17;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--color-pressed);
+}
+
+.nav-link:focus-visible {
+  color: var(--color-pressed);
+  outline: 2px solid var(--color-primary-brand);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.address-link {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.address-link:hover,
+.address-link:focus-visible {
+  color: var(--color-pressed);
+  text-decoration: underline;
+}
+
+.address-link:focus-visible {
+  outline: 2px solid var(--color-primary-brand);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.button-primary {
+  background-color: var(--color-primary-brand);
+  color: var(--color-white-background);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  margin: 0 auto;
+  border-width: 0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.button-primary:hover {
+  background-color: var(--color-pressed);
+}
+
+.button-primary:focus-visible {
+  background-color: var(--color-pressed);
+  outline: 2px solid var(--color-white-background);
+  outline-offset: 2px;
+}
+/* #endregion Components */
+
+/* #region Header */
+header {
+  border-bottom: 1px solid var(--color-accent);
+  padding: 0 156px;
+}
+
+.header-container {
+  padding: 24px 0;
+  display: flex;
+}
+
+.header-container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  column-gap: 76px;
+}
+
+.header-nav ul {
+  flex-grow: 1;
+  display: flex;
+  gap: 40px;
+}
+
+.header-container address ul {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  flex-wrap: wrap;
+}
+/* #endregion Header */
+
+/* #region Hero */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  background-color: var(--color-hero-background);
+  color: var(--color-white-background);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+}
+
+.hero-title {
+  margin-bottom: 48px;
+}
+/* #endregion Hero */
+
+/* #region Features */
+.features {}
+
+.features .feature-text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.features ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.features ul li {
+  width: calc((100% - 24px * 3) / 4);
+  min-width: 155px;
+}
+
+.feature-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+/* #endregion Features */
+
+/* #region Team */
+.team {
+  background-color: var(--color-light);
+}
+
+.team ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 24px;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.team ul li {
+  background-color: var(--color-white-background);
+  min-width: 264px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team img {
+  object-fit: contain;
+}
+
+.team-card {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+  text-transform: capitalize;
+}
+
+.team-card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
+  row-gap: 8px;
+  align-items: center;
+}
+
+.team-card-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.team-card-role {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+/* #endregion Team */
+
+/* #region Portfolio */
+.portfolio {}
+
+.portfolio-card div {
+  padding: 32px 16px;
+  border-left: 1px solid var(--color-accent);
+  border-right: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.portfolio h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.portfolio ul {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.portfolio img {
+  width: 360px;
+  height: 300px;
+}
+
+.portfolio-card-title {
+  color: var(--color-dark);
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.portfolio-card-category {
+  margin: 0;
+}
+/* #endregion Portfolio */
+
+/* #region Footer */
+footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 0 156px;
+}
+
+footer .container {
+  padding: 100px 0;
+}
+
+.footer-brand {
+  width: 264px;
+}
+
+.footer-brand a {
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.footer-tagline {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+/* #endregion Footer */
