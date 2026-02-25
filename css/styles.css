@@ -179,6 +179,7 @@ address {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--color-dark);
+  padding: 24px 0;
 }
 
 .nav-link:hover,
