@@ -275,9 +275,9 @@ address {
   gap: 40px;
 }
 
-.header-nav-item, .contacts-item {
- padding: 24px 0;
-
+.header-nav-item,
+.contacts-item {
+  padding: 24px 0;
 }
 
 .contacts-list {
@@ -317,18 +317,6 @@ address {
 }
 
 .features-list {
-}
-.feature-list-item {
-}
-
-.features .feature-text {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  margin: 0;
-}
-
-.features ul {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -337,9 +325,16 @@ address {
   justify-content: center;
 }
 
-.features ul li {
+.feature-list-item {
   width: calc((100% - 24px * 3) / 4);
   min-width: 155px;
+}
+
+.features .feature-text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  margin: 0;
 }
 
 .feature-title {
@@ -422,9 +417,7 @@ address {
 
 /* #region Portfolio */
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+  padding: 120px 0 120px 0;}
 
 .portfolio-card {
   width: calc((100% - 48px) / 3);
