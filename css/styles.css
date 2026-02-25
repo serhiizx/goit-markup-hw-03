@@ -275,8 +275,9 @@ address {
   gap: 40px;
 }
 
-.header-nav-item {
-  padding: 24px 0;
+.header-nav-item, .contacts-item {
+ padding: 24px 0;
+
 }
 
 .contacts-list {
