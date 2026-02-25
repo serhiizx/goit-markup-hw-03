@@ -275,6 +275,10 @@ address {
   gap: 40px;
 }
 
+.header-nav-item {
+  padding: 24px 0;
+}
+
 .contacts-list {
   display: flex;
   flex-direction: row;
